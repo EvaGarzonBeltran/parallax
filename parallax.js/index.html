@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Prueba parallax.js</title>
+
+    <!-- Behavioral Meta Data -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+    <div id="bg">
+        <div class="container">
+            <ul id="scene">
+                <li class="layer" id="sol" data-depth="0.20">
+                    <img src="images/sol-parallax.png" />
+                </li>
+                <li class="layer" id="nubes" data-depth="1.80">
+                    <img src="images/nubes-parallax.png" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        console.log(scene);
+        var parallax = new Parallax(scene);
+
+    </script>
+
+</body>
+
+</html>
