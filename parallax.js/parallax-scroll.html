@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Parallax Scroll</title>
+
+  <!-- Behavioral Meta Data -->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <style>
+    #caja-1,
+    #caja-2,
+    #caja-3,
+    #caja-4 {
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      display: table;
+    }
+
+    #caja-1 {
+      background-image: url('./images/city/city1.jpg');
+    }
+
+    #caja-2 {
+      height: 500px !important;
+      background-image: url('./images/city/city2.jpg');
+      background-attachment: fixed;
+    }
+
+    #caja-3 {
+      background-image: url('./images/city/city3.jpg');
+    }
+
+    #caja-4 {
+      background-image: url('./images/city/city1.jpg');
+      background-attachment: fixed;
+    }
+
+    #descripcion-1{
+      height: 300px;
+    }
+
+    #descripcion-2{
+      height: 100vh;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Arial', sans-serif;
+      display: table-cell;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="contenedor">
+
+    <div id="caja-1">
+      <h1>City Pics</h>
+    </div>
+
+    <div id="descripcion-1">
+
+    </div>
+
+    <div id="caja-2">
+      <h1>Caja 2</h>
+    </div>
+
+    <div id="descripcion-2">
+      <h1>Caja 3</h>
+    </div>
+
+    <div id="caja-4">
+      <h1>Caja 4</h>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
